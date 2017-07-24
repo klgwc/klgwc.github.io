@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
   <title>K L Portfolio</title>
+  <script>
+  window.alert("hey, it's k***** l***! welcome to my webpage!")
+  </script>
 </head>
 <style>
 body    {background-color: #4682B4;}
@@ -23,8 +26,22 @@ p {
 
 <h2 align="center"><b>Welcome to my page!</b></h2>
 
-<p align="center">Hey! Welcome to my portfolio website! My name is K*** L****, and I am a member of the Girls Who Code sisterhood. I am also a part of my school's track team, basketball team, national honor society, national music honor society, jazz choir, chorale choir, puzzle club, and new generation club. I enjoy hanging out with friends, drinking boba, and playing with hypoallergenic puppies. In my free time, I read :)</p>
-<img src="female-mii.png" alt="me!" style="width:228px;height:228px;">
+<script>
+function expand() {
+  document.getElementById("expandpar").innerHTML = "Hey! Welcome to my portfolio website! My name is K*** L****, and I am a member of the Girls Who Code sisterhood. I am also a part of my school's track team, basketball team, national honor society, national music honor society, jazz choir, chorale choir, puzzle club, and new generation club. I enjoy hanging out with friends, drinking boba, and playing with hypoallergenic puppies. In my free time, I read :)";
+}
+function bigImg(x) {
+  x.style.height = "456px";
+  x.style.width = "456px";
+}
+function normalImg(x) {
+  x.style.height = "228px";
+  x.style.height = "228px";
+}
+</script>
+
+<p id="expandpar" align="center" onclick="expand()">Hey! Welcome to my portfolio website! My name is K*** L****, and I am a member of the Girls Who Code sisterhood. Click me to see more!</p>
+<img src="female-mii.png" alt="me!" width="228" height="228" onmouseover="bigImg(this)" onmouseout"normalImg(this)">
 
 <h2>Fun Facts</h2>
 <p>  ~My go-to Starbucks drinks are the Vanilla Bean Frapp when it's warm and the hot chocolate when it's chilly. </p>
